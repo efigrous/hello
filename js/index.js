@@ -138,6 +138,5 @@ circle.setGradient('fill', {
   colorStops: {
     0: '#000',
     1: '#fff'
-  };
-}
-canvas.add(circle));
+  }
+});
