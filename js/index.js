@@ -111,7 +111,7 @@ fabric.Image.fromURL('js/bf.jpg', function(img) {
 
 fabric.Image.fromURL('js/pi5.jpg', function(img) {
   // add filter
-  img.filters.push(new fabric.Image.filters.Grayscale());
+  img.filters.push(new fabric.Image.filters.Sepia());
 
  
   // apply filters and re-render canvas when done
