@@ -109,4 +109,17 @@ fabric.Image.fromURL('js/bf.jpg', function(img) {
 
 
 
+fabric.Image.fromURL('js/pi5.jpg', function(img) {
+  // add filter
+  img.filters.push(new fabric.Image.filters.Grayscale());
 
+ 
+  // apply filters and re-render canvas when done
+  img.applyFilters(canvas.renderAll.bind(canvas));
+
+  // add image onto canvas
+  img.width = canvas.width;
+  img.height = canvas.height;
+  canvas.add(img);
+  
+});
