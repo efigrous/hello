@@ -140,3 +140,4 @@ circle.setGradient('fill', {
     1: '#fff'
   }
 });
+canvas.add(circle);
