@@ -128,13 +128,8 @@ var rect2 = new fabric.Rect({
   height: 100,
   fill: 'rgb(111,154,211)'
 });
-var rect3 = new fabric.Rect({
-  left: 400,
-  top: 100,
-  width: 100,
-  height: 100,
-  fill: 'rgb(166,111,213)'
-});
+
+
 var rect4 = new fabric.Rect({
   left: 100,
   top: 400,
