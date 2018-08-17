@@ -15,7 +15,7 @@ let circle1= new fabric.Circle({
 
 canvas.add(circle1);
 
-
+canvas.renderAll();
 
 let rect3 = new fabric.Rect ({width: 100, height: 100});
 canvas.add(rect3);
