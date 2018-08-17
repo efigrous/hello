@@ -156,7 +156,7 @@ var rect6 = new fabric.Rect({
   height: 100,
   fill: 'rgb(166,111,213)'
 });
-canvas.add(rect1, rect2, rect3, rect4, rect5, rect6);
+canvas.add(rect1, rect2, rect4, rect5, rect6);
 
 /**
 * setGradient linear gradients example
@@ -188,19 +188,6 @@ rect2.setGradient('fill', {
   }
 });
 
-// diagonal linear gradient
-rect3.setGradient('fill', {
-  type: 'linear',
-  x1: -rect3.width / 2,
-  y1: -rect3.height / 2,
-  x2: rect3.width / 2,
-  y2: rect3.height / 2,
-  colorStops: {
-      0: 'rgb(166,111,213)',
-      0.5: 'rgba(106, 72, 215, 0.5)',
-      1: '#200772'
-  }
-});
 
 /**
 * setGradient radial gradients example
