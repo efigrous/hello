@@ -1,7 +1,7 @@
 let canvas = new fabric.Canvas('c');
 
 
-
+/*
 
 
 canvas.renderAll();
@@ -103,7 +103,7 @@ fabric.Image.fromURL('js/pi5.jpg', function(img) {
   canvas.add(img);
   
 });
-
+*/
 
 // Do some initializing stuff
 fabric.Object.prototype.set({
