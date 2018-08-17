@@ -2,21 +2,6 @@ let canvas = new fabric.Canvas('c');
 
 
 
-canvas.add(rect2);
-
-rect2.set('left', 200);
-
-$("#b").click(
-  function(){
-  // alert(rect2.left);
-   rect2.set({'left': rect2.left+20});
-   canvas.renderAll();
-  }
-);
-
-rect2.set('fill', 'green');
-rect2.set({strokeWidth:25 ,stroke:'rgba(200,200,200,1'});
-rect2.set('angle', 15).set('flipY', true);
 
 
 canvas.renderAll();
