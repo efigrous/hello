@@ -9,7 +9,7 @@ canvas.renderAll();
 let circle1= new fabric.Circle({
   left:200,
   top:200,
-  fill:'blue',
+  fill:'red',
   radius:100 
 });
 
