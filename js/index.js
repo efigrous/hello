@@ -1,23 +1,6 @@
 let canvas = new fabric.Canvas('c');
 
-var circle = new fabric.Circle({
-  left: 100,
-  top: 100,
-  fill:'red',
-  radius: 50
-});
 
-circle.setGradient('fill', { type:'radial',x1: 5, y1: 5, x2: 50, y2: 10, r1: 20, r2: 70, colorStops: { '0.2': 'rgba(0,100,0,0.5)', '0.7': 'rgba(0,153,153,0.5)'} });
-canvas.add(circle);
-
-canvas.renderAll();
-let rect2 =  new fabric.Rect({
-  left:100,
-  top:150,
-  fill:'red',
-  width:200,
-  height:200
-});
 
 canvas.add(rect2);
 
