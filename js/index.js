@@ -1,5 +1,14 @@
 let canvas = new fabric.Canvas('c');
 
+var circle = new fabric.Circle({
+  left: 100,
+  top: 100,
+  radius: 50
+});
+
+circle.setGradient('fill', { type:'radial',x1: 5, y1: 5, x2: 50, y2: 10, r1: 20, r2: 70, colorStops: { '0.2': 'rgba(0,100,0,0.5)', '0.7': 'rgba(0,153,153,0.5)'} });
+canvas.add(circle);
+
 
 let rect2 =  new fabric.Rect({
   left:100,
@@ -32,10 +41,12 @@ let circle1= new fabric.Circle({
   left:200,
   top:200,
   fill:'blue',
-  radius:20 
+  radius:100 
 });
 
 canvas.add(circle1);
+
+
 
 let rect3 = new fabric.Rect ({width: 100, height: 100});
 canvas.add(rect3);
@@ -124,20 +135,4 @@ fabric.Image.fromURL('js/pi5.jpg', function(img) {
   
 });
 
-var circle = new fabric.Circle({
-  left: 100,
-  top: 100,
-  radius: 50
-});
 
-circle.setGradient('fill', {
-  x1: 0,
-  y1: 0,
-  x2: 0,
-  y2: circle.height,
-  colorStops: {
-    0: '#000',
-    1: '#fff'
-  }
-});
-canvas.add(circle);
