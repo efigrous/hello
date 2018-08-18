@@ -123,6 +123,30 @@ fabric.Image.fromURL('js/pi5.jpg', function(Oimg) {
   
 });
 
+var rect = new fabric.Rect({
+  left: 20,
+  top: 20,
+  width: 550,
+  height: 100
+});
+
+
+rect.setGradient('fill', {
+  x1: 45,
+  y1: 50,
+  x2: 170,
+  y2: 90,
+  colorStops: {
+    0: "black",
+    0.5: "red",
+    1: "blue"
+  }
+});
+
+canvas.add(rect);
+canvas.renderAll();
+
+
 var circle = new fabric.Circle({
   left: 100,
   top: 100,
