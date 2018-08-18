@@ -167,3 +167,19 @@ circle.setGradient('fill', {
 canvas.add(rect);
 canvas.add(circle);
 canvas.renderAll();
+
+var text = new fabric.Text('hello world', { 
+  left: 100, 
+  fontWeight: 'bold', 
+  fontsize: '5', 
+  top: 100, 
+  fontFamily: 'Impact',
+  stroke: '#c3bfbf',
+  strokeWidth: 3, 
+  fontSize: 40 });
+canvas.add(text); 
+
+
+
+
+canvas.renderAll();
