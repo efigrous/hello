@@ -124,8 +124,8 @@ fabric.Image.fromURL('js/pi5.jpg', function(Oimg) {
 });
 
 var rect = new fabric.Rect({
-  left: 20,
-  top: 20,
+  left: 120,
+  top: 120,
   width: 550,
   height: 100
 });
