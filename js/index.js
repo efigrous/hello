@@ -165,4 +165,5 @@ circle.setGradient('fill', {
 
 
 canvas.add(rect);
+canvas.add(circle);
 canvas.renderAll();
