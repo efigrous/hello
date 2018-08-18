@@ -1,7 +1,29 @@
 let canvas = new fabric.Canvas('c');
 
 
+let rect2 =  new fabric.Rect({
+  left:100,
+  top:150,
+  fill:'red',
+  width:200,
+  height:200
+});
 
+canvas.add(rect2);
+
+rect2.set('left', 200);
+
+$("#b").click(
+  function(){
+  // alert(rect2.left);
+   rect2.set({'left': rect2.left+20});
+   canvas.renderAll();
+  }
+);
+
+rect2.set('fill', 'green');
+rect2.set({strokeWidth:25 ,stroke:'rgba(200,200,200,1'});
+rect2.set('angle', 15).set('flipY', true);
 
 
 canvas.renderAll();
@@ -9,13 +31,11 @@ canvas.renderAll();
 let circle1= new fabric.Circle({
   left:200,
   top:200,
-  fill:'red',
-  radius:100 
+  fill:'blue',
+  radius:20 
 });
 
 canvas.add(circle1);
-
-canvas.renderAll();
 
 let rect3 = new fabric.Rect ({width: 100, height: 100});
 canvas.add(rect3);
@@ -88,20 +108,18 @@ fabric.Image.fromURL('js/bf.jpg', function(img) {
 });
 
 
-
-fabric.Image.fromURL('js/pi5.jpg', function(img) {
+fabric.Image.fromURL('js/pi5.jpg', function(Oimg) {
   // add filter
-  img.filters.push(new fabric.Image.filters.Sepia());
+  Oimg.filters.push(new fabric.Image.filters.Sepia());
 
  
   // apply filters and re-render canvas when done
-  img.applyFilters(canvas.renderAll.bind(canvas));
+  Oimg.applyFilters(canvas.renderAll.bind(canvas));
 
   // add image onto canvas
-  img.width = canvas.width;
-  img.height = canvas.height;
-  canvas.add(img);
+  Oimg.width = canvas.width;
+  Oimg.height = canvas.height;
+  canvas.add(Oimg);
   
 });
-
 
