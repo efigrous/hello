@@ -146,5 +146,23 @@ rect.setGradient('fill', {
   }
 });
 
+var circle = new fabric.Circle({
+  left: 100,
+  top: 100,
+  radius: 50
+});
+
+circle.setGradient('fill', {
+  x1: 0,
+  y1: 0,
+  x2: 0,
+  y2: circle.height,
+  colorStops: {
+    0: '#000',
+    1: '#fff'
+  }
+});
+
+
 canvas.add(rect);
 canvas.renderAll();
